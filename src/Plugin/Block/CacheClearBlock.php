@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\akamai\Plugin\Block\AkamaiCacheClearBlock.
+ * Contains \Drupal\akamai\Plugin\Block\CacheClearBlock.
  */
 
 namespace Drupal\akamai\Plugin\Block;
@@ -20,13 +20,13 @@ use Drupal\Core\Access\AccessResult;
  *   category = @Translation("Akamai")
  * )
  */
-class AkamaiCacheClearBlock extends BlockBase {
+class CacheClearBlock extends BlockBase {
 
   /**
    * {@inheritdoc}
    */
   public function build() {
-    $form = \Drupal::formBuilder()->getForm('\Drupal\akamai\Form\AkamaiClearUrlForm');
+    $form = \Drupal::formBuilder()->getForm('\Drupal\akamai\Form\ClearUrlForm');
     return array(
       'cache_clear_form' => $form,
     );

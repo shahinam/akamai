@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains Drupal\akamai\AkamaiContentControlClient.
+ * Contains Drupal\akamai\ContentControlClient.
  */
 
 namespace Drupal\akamai;
@@ -17,7 +17,7 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 /**
  * Provides a service to interact with the Akamai Content Control REST API.
  */
-class AkamaiContentControlClient implements AkamaiContentControlInterface {
+class ContentControlClient implements ContentControlInterface {
 
   /**
    * The HTTP client to fetch the feed data with.
